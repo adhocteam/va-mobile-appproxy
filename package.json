@@ -1,0 +1,15 @@
+{
+  "name": "mobile-auth-proxy",
+  "version": "1.0.0",
+  "description": "mobile app proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/damp-plains-64751.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
