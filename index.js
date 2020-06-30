@@ -2,7 +2,7 @@ const http = require('http');
 const url = require('url');
 
 const PORT = process.env.PORT || 3000;
-const DEEP_LINK = 'vamobile://login-success';
+const DEEP_LINK = 'vamobile://';
 
 function redirect(response, url) {
   response.writeHead(302, {
@@ -22,6 +22,8 @@ http
       redirect(response, decodeURIComponent(parameters.authServiceUrl));
       return;
     }
+
+    console.log(response);
 
     // redirect response from the auth service to your application
     redirect(response, DEEP_LINK);
