@@ -2,7 +2,7 @@ const http = require('http');
 const url = require('url');
 
 const PORT = process.env.PORT || 3000;
-const DEEP_LINK = 'theva://home';
+const DEEP_LINK = 'vamobile://login-success';
 
 function redirect(response, url) {
   response.writeHead(302, {
