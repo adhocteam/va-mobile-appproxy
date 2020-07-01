@@ -30,7 +30,14 @@ http
       pathname: DEEP_LINK,
       query: request.query
     });
+    const newUrl2 = url.format({
+      pathname: DEEP_LINK,
+      query: parameters
+    });
 
+    console.log(`new URL2 ${newUrl2}`);
+
+    console.log(request.query);
     console.log(`new URL ${newUrl}`);
 
     // redirect response from the auth service to application, preserve query parameters
