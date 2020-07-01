@@ -26,7 +26,7 @@ http
 
     console.log(parameters);
 
-    const newUrl = ur.format({
+    const newUrl = url.format({
       pathname: DEEP_LINK,
       query: request.query
     });
