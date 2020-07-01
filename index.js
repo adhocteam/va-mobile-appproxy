@@ -24,7 +24,7 @@ http
       return;
     }
 
-    console.log(response);
+    console.log(parameters);
 
     // redirect response from the auth service to your application
     redirect(response, DEEP_LINK);
