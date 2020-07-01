@@ -26,7 +26,12 @@ http
 
     console.log(parameters);
 
-    // redirect response from the auth service to your application
-    redirect(response, DEEP_LINK);
+    const newUrl = ur.format({
+      pathname: DEEP_LINK,
+      query: request.query
+    });
+
+    // redirect response from the auth service to application, preserve query parameters
+    redirect(response, newUrl);
   })
   .listen(PORT);
