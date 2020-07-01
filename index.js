@@ -31,6 +31,8 @@ http
       query: request.query
     });
 
+    console.log(`new URL ${newUrl}`);
+
     // redirect response from the auth service to application, preserve query parameters
     redirect(response, newUrl);
   })
