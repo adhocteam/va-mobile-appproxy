@@ -2,7 +2,7 @@ const http = require('http');
 const url = require('url');
 
 const PORT = process.env.PORT || 3000;
-const DEEP_LINK = 'vamobile://';
+const DEEP_LINK = 'vamobile:/';
 // const DEEP_LINK = 'https://29da5c1d1504b3179c1a650d647beaf3.m.pipedream.net'
 
 function redirect(response, url) {
